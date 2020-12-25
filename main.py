@@ -14,5 +14,5 @@ async def hello(ctx):
     await ctx.send('hello!')
 
 @bot.command()
-async def owo(ctx, args):
-    await ctx.send(args)
+async def owo(ctx, arg):
+    await ctx.send(arg)

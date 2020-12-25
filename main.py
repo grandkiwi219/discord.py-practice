@@ -16,3 +16,7 @@ async def hello(ctx):
 @bot.command()
 async def owo(ctx, arg):
     await ctx.send(arg)
+
+@bot.command()
+async def test(ctx, *args):
+    await ctx.send('{} arguments: {}'.format(len(args), ', '.join(args)))
